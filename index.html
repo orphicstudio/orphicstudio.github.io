@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jewelry Collection</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <div class="logo">ORPHIC</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#collection">Collection</a>
+            <a href="#new">New Arrivals</a>
+            <a href="#how-to-order">How to Order</a>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+
+        <p class="eyebrow">HANDMADE JEWELRY</p>
+
+        <h1>Pieces made to<br>be remembered.</h1>
+
+        <p class="hero-text">
+            Discover our collection of handmade jewelry,
+            thoughtfully created for every kind of moment.
+        </p>
+
+        <a href="#collection" class="button">
+            Explore Collection
+        </a>
+
+    </section>
+
+
+    <!-- Collection Categories -->
+    <section id="collection" class="collection">
+
+        <p class="eyebrow">EXPLORE</p>
+
+        <h2>The Collection</h2>
+
+        <div class="categories">
+
+    <button class="category" data-category="all">
+        All
+    </button>
+
+    <button class="category" data-category="earrings">
+        Earrings
+    </button>
+
+    <button class="category" data-category="bracelets">
+        Bracelets
+    </button>
+
+    <button class="category" data-category="necklaces">
+        Necklaces
+    </button>
+
+    <button class="category" data-category="rings">
+        Rings
+    </button>
+
+    <button class="category" data-category="sets">
+        Sets
+    </button>
+
+</div>
+
+    </section>
+
+
+    <!-- New Arrivals -->
+    <section id="new" class="new-arrivals">
+
+        <p class="eyebrow">JUST IN</p>
+
+        <h2>New Arrivals</h2>
+
+         <div class="product-grid" id="product-grid"></div>
+
+    </section>
+
+
+    <!-- How to Order -->
+    <section id="how-to-order" class="how-to-order">
+
+        <p class="eyebrow">ORDERING</p>
+
+        <h2>How to Order</h2>
+
+        <p>
+            Choose your favorite piece, note its product code,
+            and send us a DM on Instagram to place your order.
+        </p>
+
+        <a href="https://www.instagram.com/orphic.studio.official/" class="button" target="_blank">DM Us on Instagram</a>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+    <div class="logo">ORPHIC</div>
+    <p>Handmade with care.</p>
+    <a href="https://www.instagram.com/orphic.studio.official/" target="_blank" class="footer-instagram">
+        Instagram
+    </a>
+</footer>
+
+<!-- Product Details Popup -->
+<div class="product-modal" id="product-modal">
+
+    <div class="product-modal-content">
+
+        <button class="modal-close" id="modal-close">&times;</button>
+
+        <img id="modal-image" src="" alt="">
+
+        <div class="modal-info">
+    <p class="eyebrow">PRODUCT</p>
+    <h2 id="modal-name"></h2>
+    <p id="modal-code"></p>
+    <span id="modal-price"></span>
+    <small id="modal-status"></small>
+
+    <a href="https://www.instagram.com/orphic.studio.official/" 
+       class="button modal-order-button" 
+       target="_blank">
+        DM to Order
+    </a>
+</div>
+
+    </div>
+
+</div>
+
+<script src="products.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

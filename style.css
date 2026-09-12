@@ -1,0 +1,479 @@
+/* =========================
+   BASIC SETUP
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f5f0;
+    color: #2f2a27;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+header {
+    width: 100%;
+    padding: 25px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd5cc;
+}
+
+.logo {
+    font-family: Georgia, serif;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #2f2a27;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    opacity: 0.6;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.eyebrow {
+    font-size: 11px;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+    color: #8c6f62;
+}
+
+.hero h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(45px, 7vw, 80px);
+    font-weight: normal;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero-text {
+    max-width: 500px;
+    font-size: 16px;
+    color: #6b625d;
+    margin-bottom: 35px;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.button {
+    display: inline-block;
+    padding: 13px 28px;
+    background-color: #2f2a27;
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+
+/* =========================
+   COLLECTION
+========================= */
+
+.collection {
+    padding: 100px 7%;
+    text-align: center;
+}
+
+.collection h2,
+.new-arrivals h2,
+.how-to-order h2 {
+    font-family: Georgia, serif;
+    font-size: 42px;
+    font-weight: normal;
+    margin-bottom: 50px;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+    width: 100%;
+}
+
+.category {
+    width: 100%;
+    height: 180px;
+    min-height: 180px;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #e8dfd5;
+    color: #2f2a27;
+
+    border: none;
+    border-radius: 0;
+
+    font-family: Georgia, serif;
+    font-size: 20px;
+    cursor: pointer;
+
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.category:hover {
+    background-color: #d8cabe;
+    color: #2f2a27;
+}
+
+/* =========================
+   PRODUCTS
+========================= */
+
+.new-arrivals {
+    padding: 100px 7%;
+}
+
+.new-arrivals h2 {
+    text-align: center;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px 25px;
+}
+
+.product-card {
+    text-align: center;
+    cursor: pointer;
+}
+
+.product-image {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-bottom: 18px;
+    background-color: #eee8e1;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.03);
+}
+
+.product-card h3 {
+    font-family: Georgia, serif;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.product-card p {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #8c6f62;
+    margin-bottom: 8px;
+}
+
+.product-card span {
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    color: #2f2a27;
+}
+
+.product-status {
+    display: block;
+    margin-top: 8px;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #8c6f62;
+}
+
+
+/* =========================
+   HOW TO ORDER
+========================= */
+
+.how-to-order {
+    padding: 120px 20px;
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+}
+
+.how-to-order h2 {
+    margin-bottom: 25px;
+}
+
+.how-to-order p:not(.eyebrow) {
+    color: #6b625d;
+    max-width: 500px;
+    margin: 0 auto 35px;
+    font-size: 15px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    border-top: 1px solid #ddd5cc;
+    padding: 55px 7%;
+    text-align: center;
+    background-color: #f3eee8;
+}
+
+footer .logo {
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+footer p {
+    color: #8c827b;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a {
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+    .categories {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .category {
+    height: 140px;
+    min-height: 140px;
+    font-size: 17px;
+}
+
+    .product-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+    .product-image {
+        height: 240px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .product-modal-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 25px;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+
+    .product-modal-content > img {
+    width: 100%;
+    height: 280px;
+    object-fit: contain;
+}
+
+    .modal-info h2 {
+        font-size: 28px;
+    }
+
+}
+
+
+/* =========================
+   PRODUCT POPUP
+========================= */
+
+.product-modal {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(47, 42, 39, 0.55);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+
+    z-index: 1000;
+}
+
+.product-modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.product-modal-content {
+    position: relative;
+
+    width: min(800px, 100%);
+    background-color: #f8f5f0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 40px;
+    padding: 35px;
+
+    box-shadow: 0 15px 50px rgba(47, 42, 39, 0.2);
+}
+
+.product-modal-content > img {
+    width: 100%;
+    height: auto;
+    max-height: 350px;
+    object-fit: contain;
+    display: block;
+}
+
+.modal-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.modal-info h2 {
+    font-family: Georgia, serif;
+    font-size: 34px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+#modal-code {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #8c6f62;
+    margin-bottom: 15px;
+}
+
+#modal-price {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#modal-status {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #8c6f62;
+}
+
+.modal-close {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+
+    background: none;
+    border: none;
+
+    font-size: 28px;
+    font-weight: normal;
+
+    color: #2f2a27;
+    cursor: pointer;
+
+    line-height: 1;
+}
+
+.modal-close:hover {
+    opacity: 0.5;
+}
+.modal-order-button {
+    display: inline-block;
+    margin-top: 25px;
+    text-align: center;
+    width: fit-content;
+}
+.footer-instagram {
+    display: inline-block;
+    margin-top: 15px;
+    color: #2f2a27;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #8c6f62;
+    padding-bottom: 3px;
+}
+
+.footer-instagram:hover {
+    opacity: 0.6;
+}
+html {
+    scroll-behavior: smooth;
+}
