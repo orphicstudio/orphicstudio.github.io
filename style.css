@@ -13,12 +13,52 @@ html {
 }
 
 body {
+    margin: 0;
+    position: relative;
+
     font-family: Arial, sans-serif;
-    background-color: #F8F3EA;
     color: #2f2a27;
     line-height: 1.6;
+
+    background: #eee7dc;
 }
 
+/* =========================
+   ORPHIC BACKGROUND
+========================= */
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background-image: url("orphic-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    z-index: -2;
+}
+
+/* Soft warm layer over the image */
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background: rgba(245, 238, 227, 0.18);
+
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* =========================
+   CONTENT SECTIONS
+========================= */
+
+section {
+    background: rgba(255, 255, 255, 0.35);
+}
 
 /* =========================
    NAVIGATION
