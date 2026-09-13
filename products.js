@@ -135,7 +135,7 @@ const products = [
     code: "B-002",
     category: "sets",
     price: 900,
-    image: "images/b002.jpeg",
+    image: "images/b003.jpeg",
     status: "available",
     colors: [
     "Pearl White",
