@@ -485,3 +485,16 @@ html {
     display: block;
     margin: 0 auto 35px;
 }
+@media (max-width: 800px) {
+
+    .hero {
+        padding-top: 70px;
+    }
+
+    .hero-brand-image {
+        width: 180px;
+        height: 180px;
+        margin-bottom: 30px;
+    }
+
+}
