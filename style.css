@@ -478,8 +478,8 @@ html {
     scroll-behavior: smooth;
 }
 .hero-brand-image {
-    width: 210px;
-    height: 210px;
+    width: 180px;
+    height: 180px;
     object-fit: cover;
     border-radius: 50%;
     display: block;
