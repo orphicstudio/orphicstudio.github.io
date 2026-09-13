@@ -150,19 +150,19 @@ nav a:hover {
     background-color: #e8dfd5;
     color: #2f2a27;
 
-    border: none;
+    border: 1px solid #ded3c8;
     border-radius: 0;
 
     font-family: Georgia, serif;
     font-size: 20px;
     cursor: pointer;
 
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .category:hover {
-    background-color: #d8cabe;
-    color: #2f2a27;
+    background-color: #ded3c8;
+    transform: translateY(-2px);
 }
 
 /* =========================
