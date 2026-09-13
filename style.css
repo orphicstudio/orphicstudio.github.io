@@ -317,13 +317,17 @@ nav a {
 }
 
     .product-grid {
-    grid-template-columns: 1fr;
-    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px 15px;
 }
 
-    .product-image {
-        height: 240px;
-    }
+.product-image {
+    height: 200px;
+}
+
+.product-card h3 {
+    font-size: 17px;
+}
 
     .hero h1 {
         font-size: 48px;
