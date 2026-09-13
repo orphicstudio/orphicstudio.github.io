@@ -1,12 +1,5 @@
 const products = [
-    {
-        name: "TEST",
-        code: "TEST",
-        category: "earrings",
-        price: 100,
-        image: "images/e001.jpeg",
-        status: "available"
-    },
+
     {
         name: "Pearl Drop",
         code: "E-001",
@@ -72,35 +65,12 @@ const products = [
     "Grey"
 ]
     },
-
-    {
-        name: "Golden Arc",
-        code: "N-001",
-        category: "bracelets",
-        price: 400,
-        image: "images/n001.jpeg",
-        status: "available",
-        colors: [
-    "Pearl White",
-    "Champagne Pearl",
-    "Gray Azure",
-    "Pastel Green",
-    "Dark Maroon",
-    "Burnt Orange",
-    "Pastel Crimson",
-    "Forest Green",
-    "Black",
-    "Pink Cream",
-    "Grey"
-]
-    },
-
 {
     name: "Golden Mosaic",
     code: "C-001",
     category: "bracelets",
     price: 350,
-    image: "YOUR-IMAGE-HERE",
+    image: "images/c001.jpeg",
     status: "available",
     colors: [
     "Pearl White",
@@ -121,7 +91,7 @@ const products = [
     code: "C-002",
     category: "sets",
     price: 600,
-    image: "YOUR-IMAGE-HERE",
+    image: "images/c002.jpeg",
     status: "available",
     colors: [
     "Pearl White",
@@ -143,7 +113,7 @@ const products = [
     code: "B-002",
     category: "sets",
     price: 900,
-    image: "YOUR-IMAGE-HERE",
+    image: "images/b002.jpeg",
     status: "available",
     colors: [
     "Pearl White",
@@ -165,7 +135,7 @@ const products = [
     code: "N-002",
     category: "necklaces",
     price: 650,
-    image: "YOUR-IMAGE-HERE",
+    image: "images/n002.jpeg",
     status: "available",
     colors: [
     "Pearl White",
