@@ -5,7 +5,7 @@ const products = [
         category: "earrings",
         price: 450,
         image: "images/e001.jpeg",
-        status: "available"
+        status: "available",
         colors: [
     "Pearl White",
     "Champagne Pearl",
@@ -27,7 +27,7 @@ const products = [
         category: "earrings",
         price: 450,
         image: "images/e002.jpeg",
-        status: "available"
+        status: "available",
         colors: [
     "Pearl White",
     "Champagne Pearl",
@@ -49,7 +49,7 @@ const products = [
         category: "bracelets",
         price: 400,
         image: "images/b001.jpeg",
-        status: "available"
+        status: "available",
         colors: [
     "Pearl White",
     "Champagne Pearl",
@@ -71,7 +71,7 @@ const products = [
         category: "bracelets",
         price: 400,
         image: "images/n001.jpeg",
-        status: "available"
+        status: "available",
         colors: [
     "Pearl White",
     "Champagne Pearl",
@@ -85,7 +85,7 @@ const products = [
     "Pink Cream",
     "Grey"
 ]
-    }
+    },
 
 {
     name: "Golden Mosaic",
@@ -93,7 +93,7 @@ const products = [
     category: "bracelets",
     price: 350,
     image: "YOUR-IMAGE-HERE",
-    status: "available"
+    status: "available",
     colors: [
     "Pearl White",
     "Champagne Pearl",
@@ -114,7 +114,7 @@ const products = [
     category: "sets",
     price: 600,
     image: "YOUR-IMAGE-HERE",
-    status: "available"
+    status: "available",
     colors: [
     "Pearl White",
     "Champagne Pearl",
@@ -136,7 +136,7 @@ const products = [
     category: "sets",
     price: 900,
     image: "YOUR-IMAGE-HERE",
-    status: "available"
+    status: "available",
     colors: [
     "Pearl White",
     "Champagne Pearl",
@@ -158,7 +158,7 @@ const products = [
     category: "necklaces",
     price: 650,
     image: "YOUR-IMAGE-HERE",
-    status: "available"
+    status: "available",
     colors: [
     "Pearl White",
     "Champagne Pearl",
@@ -172,4 +172,5 @@ const products = [
     "Pink Cream",
     "Grey"
 ]
-},
+}
+];
