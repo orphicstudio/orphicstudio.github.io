@@ -27,29 +27,25 @@ body {
    ORPHIC BACKGROUND
 ========================= */
 
+body {
+    margin: 0;
+    position: relative;
+    background: #eee7dc;
+}
+
+/* Background image */
 body::before {
     content: "";
     position: fixed;
     inset: 0;
 
-    background-image: url("orphic-bg.png");
+    background-image: url("images/orphic-bg.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
-    z-index: -2;
-}
-
-/* Soft warm layer over the image */
-body::after {
-    content: "";
-    position: fixed;
-    inset: 0;
-
-    background: rgba(245, 238, 227, 0.18);
-
+    opacity: 1;
     z-index: -1;
-    pointer-events: none;
 }
 
 /* =========================
