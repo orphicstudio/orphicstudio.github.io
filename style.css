@@ -477,3 +477,11 @@ nav a {
 html {
     scroll-behavior: smooth;
 }
+.hero-brand-image {
+    width: 210px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 35px;
+}
