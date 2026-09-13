@@ -46,7 +46,7 @@ function displayProducts(category = "all") {
     modalStatus.textContent = product.status;
     modalColors.innerHTML = "";
 
-product.colors.forEach(color => {
+(product.colors || []).forEach(color => {
     const colorItem = document.createElement("span");
     colorItem.classList.add("color-option");
 

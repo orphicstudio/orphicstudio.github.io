@@ -1,5 +1,13 @@
 const products = [
     {
+        name: "TEST",
+        code: "TEST",
+        category: "earrings",
+        price: 100,
+        image: "images/e001.jpeg",
+        status: "available"
+    },
+    {
         name: "Pearl Drop",
         code: "E-001",
         category: "earrings",
