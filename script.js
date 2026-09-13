@@ -42,7 +42,7 @@ function displayProducts(category = "all") {
 
     modalName.textContent = product.name;
     modalCode.textContent = product.code;
-    modalPrice.textContent = `Rs. ${product.price.toLocaleString()}`;
+    modalPrice.textContent = `Rs  ${product.price.toLocaleString()}`;
     modalStatus.textContent = product.status;
     modalColors.innerHTML = "";
 

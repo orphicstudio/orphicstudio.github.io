@@ -65,6 +65,28 @@ const products = [
     "Grey"
 ]
     },
+
+    {
+    name: "Golden Arc",
+    code: "N-001",
+    category: "bracelets",
+    price: 400,
+    image: "images/n001.jpeg",
+    status: "available",
+    colors: [
+        "Pearl White",
+        "Champagne Pearl",
+        "Gray Azure",
+        "Pastel Green",
+        "Dark Maroon",
+        "Burnt Orange",
+        "Pastel Crimson",
+        "Forest Green",
+        "Black",
+        "Pink Cream",
+        "Grey"
+    ]
+},
 {
     name: "Golden Mosaic",
     code: "C-001",
