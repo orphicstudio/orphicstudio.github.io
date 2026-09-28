@@ -94,6 +94,10 @@ categoryButtons.forEach(button => {
 
         displayProducts(category);
 
+        document.getElementById("new").scrollIntoView({
+            behavior: "smooth"
+        });
+
     });
 
 });
