@@ -187,10 +187,10 @@ nav a:hover {
     justify-content: center;
     gap: 10px;
 
-    background-color: rgba(232, 223, 213, 0.72);
+    background-color: rgba(232, 223, 213, 0.35);
     color: #2f2a27;
 
-    border: 1px solid #ded3c8;
+    border: none;
     border-radius: 0;
 
     font-family: Georgia, serif;
@@ -213,7 +213,7 @@ nav a:hover {
 }
 
 .category:hover {
-    background-color: rgba(222, 211, 200, 0.85);
+    background-color: rgba(232, 223, 213, 0.45);
     transform: translateY(-2px);
 }
 
