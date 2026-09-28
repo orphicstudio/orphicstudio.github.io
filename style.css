@@ -169,9 +169,10 @@ nav a:hover {
 
 .categories {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 220px);
     gap: 15px;
-    width: 100%;
+    width: fit-content;
+    margin: 0 auto;
 }
 
 .category {
