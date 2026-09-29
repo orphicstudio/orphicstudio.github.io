@@ -192,6 +192,8 @@ nav a:hover {
     background: transparent;
     border: none;
     border-radius: 0;
+    font-family: Georgia, serif;
+    font-size: 20px;
 }
 
 .category img {
