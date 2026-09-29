@@ -105,3 +105,10 @@ categoryButtons.forEach(button => {
 modalClose.addEventListener("click", () => {
     productModal.classList.remove("active");
 });
+
+document.getElementById("explore-collection").addEventListener("click", () => {
+    document.getElementById("collection").scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
+});
