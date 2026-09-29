@@ -31,6 +31,7 @@ body {
     margin: 0;
     position: relative;
     background: #eee7dc;
+    overflow-x: hidden;
 }
 
 /* Background image */
@@ -169,16 +170,16 @@ nav a:hover {
 
 .categories {
     display: grid;
-    grid-template-columns: repeat(3, 190px);
+    grid-template-columns: repeat(3, 210px);
     gap: 25px;
     width: fit-content;
     margin: 0 auto;
 }
 
 .category {
-    width: 190px !important;
-    height: 190px !important;
-    min-height: 190px !important;
+    width: 210px !important;
+    height: 210px !important;
+    min-height: 210px !important;
     padding: 0;
     margin: 0;
 
@@ -356,18 +357,25 @@ nav a {
     letter-spacing: 1px;
 }
 
-    .categories {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .category {
-    height: 140px;
-    min-height: 140px;
+   .categories {
+    grid-template-columns: repeat(2, 140px);
+    gap: 15px;
+    width: fit-content;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.category {
+    width: 140px !important;
+    height: 140px !important;
+    min-height: 140px !important;
     font-size: 17px;
 }
 
 .category img {
+    width: 100%;
     height: 105px;
-}
+} 
 
     .product-grid {
     grid-template-columns: repeat(2, 1fr);
