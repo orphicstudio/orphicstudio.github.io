@@ -296,7 +296,7 @@ nav a:hover {
 .how-to-order {
     padding: 120px 20px;
     text-align: center;
-    max-width: 700px;
+    max-width: 100%;
     margin: auto;
 }
 
